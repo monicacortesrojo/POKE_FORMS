@@ -1,0 +1,17 @@
+{
+    "name": "app_14_poke_api_forms",
+    "version": "1.0.0",
+    "description": "Mi pokeapi más desarrollada",
+    "main": "server.js",
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Mónica Cortés",
+    "license": "ISC"
+}

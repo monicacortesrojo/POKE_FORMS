@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="../js/put.js"></script>
+    <title>PUT POKEMON</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SEARCH AND PUT POKEMON</h1>
+        <form>
+            <div class="input-group mb-3">
+                <input id="idPokemonSearch" type="number" class="form-control" placeholder="Buscar Pokemon por Id" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <button onclick="searchPokemon()" class="btn btn-outline-secondary customize-btn" type="button" id="button-addon2">
+            Buscar
+          </button>
+            </div>
+        </form>
+
+        <form>
+            <div class="mb-3">
+                <label for="idPokemon" class="form-label">Id Pokemon</label>
+                <input type="number" class="form-control" id="idPokemon" name="idPokemon" placeholder="Id del Pokemon" disabled />
+            </div>
+            <div class="mb-3">
+                <label for="namePokemon" class="form-label">Nombre Pokemon</label>
+                <input type="text" class="form-control" id="namePokemon" name="namePokemon" placeholder="Nombre del Pokemon" />
+            </div>
+            <div class="mb-3">
+                <label for="typePokemon" class="form-label">Tipo del Pokemon</label>
+                <input type="text" class="form-control" id="typePokemon" name="typePokemon" placeholder="Tipo del Pokemon" />
+            </div>
+            <button type="button" onclick="putPokemon()" class="btn btn-primary customize-btn">
+          Actualizar</button
+        ><!--Quitamos el tipo submit predefinido, y metemos onclick y desde nuestro js metemos nuestra funcion postPokemon-->
+      </form>
+    </div>
+  </body>
+</html>
